@@ -35,18 +35,12 @@
       </div>
 
       <div class="layout">
-
-        <!-- ============================================================
-           SIDEBAR
-           Tambah/hapus item dengan copy .sbi di bawah
-           ============================================================ -->
         <div class="sidebar">
           <div class="sb-ws">
             <div class="sb-ws-ico">𐙚♡</div>
             <div class="sb-ws-name">Atina Azizah</div>
           </div>
 
-          <!-- Main nav — onclick="goPage('ID')" harus match id page di bawah -->
           <div class="sbi active" id="nav-home" onclick="goPage('home')"> <i class="ti ti-home" aria-hidden="true"></i>
             Home</div>
           <div class="sbi" id="nav-about" onclick="goPage('about')"> <i class="ti ti-sparkle" aria-hidden="true"></i>
@@ -83,7 +77,7 @@
 
 
         <!-- ============================================================
-           CONTENT AREA — semua halaman ada di sini
+           CONTENT AREA 
            ============================================================ -->
         <div class="content">
 
@@ -134,7 +128,6 @@
               </div>
 
               <div class="two-col">
-                <!-- Kiri: gallery selected work -->
                 <div>
                   <div class="section-label-sm">Things I've Worked On</div>
                   <div class="gallery-grid">
@@ -237,7 +230,6 @@
                   </div>
                 </div>
 
-                <!-- Kanan: skills + how I connect + languages -->
                 <div>
                   <div class="section-label-sm">Areas I Keep Exploring</div>
                   <div class="skill-chips">
@@ -307,7 +299,6 @@
                     </div>
                   </div>
 
-                  <!-- Apple ADA dark callout -->
                   <div class="dark-callout">
                     <div class="dc-label">Building What's Next</div>
                     <div class="dc-text">Exploring how systems thinking, product development, and human-centered design
@@ -1522,11 +1513,10 @@
 
 
   <!-- ============================================================
-     JAVASCRIPT — jangan diubah kecuali mau tambah halaman baru
-     Kalau tambah halaman baru:
-     1. Tambah div.page dengan id="page-NAMABARU" di atas
-     2. Tambah .sbi di sidebar dengan id="nav-NAMABARU" onclick="goPage('NAMABARU')"
-     3. Tambah entry di urlMap, titleMap, navMap di bawah
+     JAVASCRIPT — if add new page:
+     1. add div.page dengan id="page-[new]" di atas
+     2. add .sbi di sidebar dengan id="nav-[new]" onclick="goPage('[new]')"
+     3. add entry di urlMap, titleMap, navMap di bawah
      ============================================================ -->
   <script>
     var history = ['home'];
